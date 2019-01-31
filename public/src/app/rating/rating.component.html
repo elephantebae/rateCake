@@ -1,0 +1,14 @@
+<form (submit)="addingReview()" class="ml-3">
+  <div class="form-group">
+    <select [(ngModel)]="newReview.rating" name="newReview.rating">
+      <option value=5>5</option>
+      <option value=4>4</option>
+      <option value=3>3</option>
+      <option value=2>2</option>
+      <option value=1>1</option>
+    </select>
+    <textarea class="form-control mt-2" placeholder="Type your comment here" name="newReview.comments" [(ngModel)]="newReview.comments"></textarea>
+    <button class="btn btn-primary mt-3">Rate!</button>
+  </div>
+
+</form>
